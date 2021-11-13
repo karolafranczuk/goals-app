@@ -1,5 +1,15 @@
-<li *ngFor="let item of items"> 
- {{ item.name }}
 
- {{ item.deadline | date: 'shortDate' }}   
-</li>
+    <mat-card class="content">
+        <button mat-mini-fab color="warn">
+            <mat-icon>remove</mat-icon>
+        </button>
+        <div *ngFor="let item of items">
+            <mat-card>
+            <mat-card-content class="subgoal-card">
+                {{ item.name }}
+
+                {{ item.deadline | date: 'shortDate' }} 
+            </mat-card-content> 
+        </mat-card>
+        </div>
+    </mat-card> 

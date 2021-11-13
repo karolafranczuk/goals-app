@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'goals-app';
+  opened = true;
+
+  toggleMenu(): void {
+    this.opened =!this.opened;
+  }
+  
 }

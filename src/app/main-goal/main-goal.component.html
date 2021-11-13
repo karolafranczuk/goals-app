@@ -1,3 +1,13 @@
-{{ item.name }}
-<br>
-<app-sub-goal></app-sub-goal>
+<mat-card>
+    <mat-card-title>
+        {{ item.name }}
+        <button mat-mini-fab color="basic" class="edit-main-goal-btn">
+            <mat-icon class="edit-main-goal-icon">edit</mat-icon>
+        </button>
+    </mat-card-title>
+    <mat-card-content class="content">
+        <app-sub-goal></app-sub-goal>
+    </mat-card-content>    
+</mat-card>
+
+
